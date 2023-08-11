@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- ====== TITLE ====== -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <!-- ====== MODES ====== -->
+
+    <link
+      class="theme"
+      rel="stylesheet"
+      href="css-files/lightmode.css"
+    />
+    <!-- ====== CSS ====== -->
+    <!-- <link rel="stylesheet" href="css-files/index.css" /> -->
+    <!-- ======= CSS FINAL BUILD ===== -->
+    <link rel="stylesheet" href="css-files/style.css" />
+    <!-- ====== ICON ====== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ====== FONT ===== -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ====== JS ====== -->
+    <script defer src="index.js"></script>
+  </head>
+  <body class="darkmode">
+    <!-- === BANNER BG === -->
+    <header class="background__header"></header>
+    <main class="todo section">
+      <!-- === TOP HEADING === -->
+      <div class="todo__heading">
+        <h1>TODO</h1>
+        <button
+          class="button theme-switch lightmode icon--large"
+        >
+          <img
+            src="images/icon-moon.svg"
+            alt="Switch to dark mode"
+          />
+        </button>
+      </div>
+
+      <div class="todo-container">
+        <!-- === SEARCH BAR === -->
+        <div class="todo__search block">
+          <button class="checkmark button">
+            <img
+              src="images/icon-check.svg"
+              alt="checkmark"
+            />
+          </button>
+          <input
+            type="text"
+            placeholder="Create a new todo"
+            class="todo__input paragraph--tertiary paragraph--dark-gray"
+          />
+        </div>
+        <!-- === DYNAMIC BLOCK === -->
+
+        <ul class="block-container">
+          <!-- <li class="block list">
+            <div class="block__list--left">
+              <button class="checkmark button checked">
+                <img
+                  src="images/icon-check.svg"
+                  alt="checkmark"
+                />
+              </button>
+              <p
+                class="block__text paragraph--tertiary paragraph--dark-gray"
+              >
+                <span>Test </span>
+              </p>
+            </div>
+            <button
+              class="delete-block button button--icon icon--medium"
+            >
+              <img
+                src="images/icon-cross.svg"
+                alt="Close"
+              />
+            </button>
+          </li> -->
+          <li class="block__bottom block">
+            <div
+              class="block__items-remaining paragraph--gray paragraph--tertiary"
+            >
+              0 Items left
+            </div>
+
+            <button
+              class="clear-completed button paragraph--tertiary paragraph--gray"
+            >
+              Clear Completed
+            </button>
+          </li>
+        </ul>
+
+        <!-- === BOTTOM NAV === -->
+        <nav class="todo__nav block">
+          <button
+            class="todo__nav-btn button paragraph--dark-gray button--active paragraph--secondary selected"
+            data-type="all"
+          >
+            All</button
+          ><button
+            class="todo__nav-btn button paragraph--dark-gray paragraph--secondary"
+            data-type="active"
+          >
+            Active</button
+          ><button
+            class="todo__nav-btn button paragraph--dark-gray paragraph--secondary"
+            data-type="completed"
+          >
+            Completed
+          </button>
+        </nav>
+      </div>
+
+      <!-- === INSTRUCTION === -->
+      <p
+        class="todo__instruction paragraph--gray paragraph--secondary"
+      >
+        Drag and drop to reorder list
+      </p>
+    </main>
+  </body>
+</html>

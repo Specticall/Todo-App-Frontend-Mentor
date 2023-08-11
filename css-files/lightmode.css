@@ -1,0 +1,11 @@
+:root {
+  --clr-main-500: hsl(0, 0%, 98%);
+  --clr-main-400: hsl(236, 33%, 92%);
+  --clr-main-300: hsl(233, 11%, 84%);
+  --clr-main-200: hsl(236, 9%, 61%);
+  --clr-main-100: hsl(235, 19%, 35%);
+}
+
+.background__header {
+  background-image: url("../../images/bg-desktop-light.jpg");
+}

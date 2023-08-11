@@ -1,0 +1,24 @@
+h1 {
+  font-size: 1.75rem;
+  font-weight: var(--fw-bold);
+  color: white;
+  letter-spacing: 0.75rem;
+}
+
+.paragraph {
+  &--secondary {
+    font-size: 0.9rem;
+  }
+
+  &--tertiary {
+    font-size: 0.8rem;
+  }
+
+  &--gray {
+    color: var(--clr-main-200);
+  }
+
+  &--dark-gray {
+    color: var(--clr-main-100);
+  }
+}
